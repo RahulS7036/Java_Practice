@@ -47,24 +47,40 @@ class Solution{
     {
         // Complete the function
         
-        boolean flag = true;
-        int[] result = new int[n];
-        int i=n-1;
-        int j=0;
-        while(i >=0){
-            result[j] = a[i];
-            j++;
-            i--;
-        }
-        for(int k=0;k<n;k++){
-            if(a[k] != result[k]){
-                flag = false;
-                break;
-            }
-        }
+        // boolean flag = true;
+        // int[] result = new int[n];
+        // int i=n-1;
+        // int j=0;
+        // while(i >=0){
+        //     result[j] = a[i];
+        //     j++;
+        //     i--;
+        // }
+        // for(int k=0;k<n;k++){
+        //     if(a[k] != result[k]){
+        //         flag = false;
+        //         break;
+        //     }
+        // }
         
-        return flag;
-        
+        // return flag;
+
+
+	    //Optimized soiution
+
+	     for(int i=0;i<n/2;i++){
+
+        if(a[i]!=a[n-i-1])
+
+        {
+
+        return false;
+
+         }
+
+     }
+
+      return true;
         
     }
     
