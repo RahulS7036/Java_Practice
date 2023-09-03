@@ -44,7 +44,7 @@ class ArraySet1{
 class Compute
 {
     String average(int A[], int N)
-    {
+    { 
         Float sum=0.f;
         for(int i=0;i<N;i++){
             sum += A[i];
